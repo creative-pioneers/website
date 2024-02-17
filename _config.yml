@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: CREATIVE PIONEERS
-email: no-response@creative-pioneers.org
+email: send@creative-pioneers.org
 description: >- # this means to ignore newlines until "baseurl:"
   © creative-pioneers.org
 baseurl: "/" # the subpath of your site, e.g. /blog
