@@ -21,7 +21,7 @@
 title: CREATIVE PIONEERS
 email: no-response@creative-pioneers.org
 description: >- # this means to ignore newlines until "baseurl:"
-  &copy; creative-pioneers.org
+  © creative-pioneers.org
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://creative-pioneers.org" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
