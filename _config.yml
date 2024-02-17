@@ -18,16 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: CREATIVE PIONEERS
+email: no-response@creative-pioneers.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  We are Creative Pioneers, a group of digital media creators who love to share our passion for audiovisual content, IT and technology, games and open source software. We are part of WANTED.solutions company, a leading provider of innovative solutions for the digital world.
+ 
+  We produce high-end content that covers various topics, such as how to create stunning videos and animations, how to master the latest technologies and tools, how to mod your favorite games and make them more fun and immersive, and how to contribute to the open source community and learn from other developers.
+ 
+  We invite you to join our network and follow our updates. You will find useful tips and tricks, inspiring examples, fun challenges and exciting opportunities to collaborate with us and other creative pioneers. Whether you are a beginner or a pro, you will find something that suits your interests and skills. Let's explore the digital world together and unleash our creativity!  
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://creative-pioneers.org" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  creative-pioneers
+youtube_username: creativepioneers
 
 # Build settings
 theme: minima
