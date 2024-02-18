@@ -29,7 +29,7 @@ github_username:  creative-pioneers
 youtube_username: "@creative-pioneers"
 
 # Build settings
-theme: jekyll-theme-basically-basic
+theme: default
 plugins: 
   - jekyll-feed
 
