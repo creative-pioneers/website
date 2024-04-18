@@ -20,18 +20,37 @@
 
 title: CREATIVE PIONEERS
 email: send@creative-pioneers.org
+keywords: "CREATIVE PIONEERS, IT solutions, web development, app development, video production, graphic design, digital agency, creativity driven, innovation, stunning cinematography"
+subject: WANTED.solutions is creativity driven digital agency that offers innovative IT solutions and stunning cinematography for your business. Whether you need a website, an app, a video, or a graphic design, we have the skills and the vision to make it happen. We are passionate about creating digital products that are user-friendly, engaging, and effective. We work with clients from various industries and sectors, delivering tailor-made solutions that meet their needs and goals. At WANTED.solutions, we don't just provide services, we create solutions for your challenges.
 description: >- # this means to ignore newlines until "baseurl:"
-  © creative-pioneers.org
+  WANTED.solutions is creativity driven digital agency that offers innovative IT solutions and stunning cinematography for your business. Whether you need a website, an app, a video, or a graphic design, we have the skills and the vision to make it happen.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://creative-pioneers.org" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  creative-pioneers
 youtube_username: "@creative-pioneers"
+http_csp: "default-src 'self'; font-src 'self' data: fonts.gstatic.com; script-src 'self' 'unsafe-inline' www.googletagmanager.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src https://*; connect-src 'self' *.google-analytics.com; child-src 'none';"
 
+permalink: /:categories/:title/
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+paginate: 12
+paginate_path: "/articles/page:num/"
+
+languages: ["en", "cz"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public", "assets"]
+parallel_localization: true
 # Build settings
-#theme: default
-plugins: 
+#theme: minima
+plugins:
   - jekyll-feed
+  - jekyll-polyglot
+  - jekyll-paginate
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
