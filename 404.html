@@ -1,25 +1,73 @@
 ---
+layout: wanted-website
+page_id: error
+lang: en
+sitemap: false
 permalink: /404.html
-layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<!-- Hero -->
+<section id="slider" class="hero p-0 odd featured">
+  <div class="swiper-container no-slider slider-h-75">
+      <div class="swiper-wrapper">
 
-<div class="container">
-  <h1>404</h1>
+          <!-- Item 1 -->
+          <div class="swiper-slide slide-center">
+              
+              <img src="/assets/website/hp-background-full.jpeg.webp" class="full-image" data-mask="80">
+              
+              <div class="slide-content row text-center">
+                  <div class="col-12 mx-auto inner">
+                      <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">NOT FOUND</h1>
+                      <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                              <li class="breadcrumb-item">Error</li>
+                              <li class="breadcrumb-item active" aria-current="page">404</li>
+                          </ol>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<!-- News -->
+<section id="news" class="section-5 odd carousel showcase news featured all">
+  <div class="overflow-holder">
+      <div class="container">
+          <div class="row intro">
+              <div class="col-12 col-md-9 align-self-center text-center text-md-left">
+                  <h2 class="featured">Latest Articles</h2>
+                  <p>We publish exclusive content on our blog about various topics. From tutorials to company press releases, you can always find fresh content on our blog and social media.</p>
+              </div>
+              <div class="col-12 col-md-3 align-self-end">
+                  <a href="/blog/articles/" class="btn mx-auto mr-md-0 ml-md-auto primary-button"><i class="icon-grid"></i>BROWSE ALL</a>
+              </div>
+          </div>
+          <div class="swiper-container mid-slider items">
+              <div class="swiper-wrapper">
+                  {% for post in site.posts %}
+                      <div class="swiper-slide slide-center item">
+                          <a href="{{ post.url }}" title="{{ post.title }}" class="row card p-0 text-center">
+                              <div class="image-over">
+                                  <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }} ilustration image">
+                              </div>
+                              <div class="card-caption col-12 p-0">
+                                  <div class="card-body">
+                                        <h3 class="m-0">{{ post.title }}</h3>
+                                  </div>
+                                  <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                      <span class="d-lg-flex align-items-center"><i class="icon-user"></i>{{ post.author }}</span>
+                                      <span class="d-lg-flex align-items-center"><i class="icon-clock"></i>{{ post.date | date_to_string: "ordinal" }}</span>
+                                  </div>
+                              </div>
+                            </a>
+                      </div>
+                  {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </div>
+  </div>
+</section>
