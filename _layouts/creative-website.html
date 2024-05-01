@@ -2,13 +2,26 @@
 <html lang="en">
 
 <head>
+    <!--
+        Basic page needs
+    -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home One || Nisoz || HTML Template For Creative Agency</title>
-    <!-- favicons Icons -->
+    <title>{{ page.title  | default: site.title }}</title>
+
+    
+    <!--
+        Favicons
+    -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+
+
+
+
+
+    <!-- favicons Icons -->
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <meta name="description" content="Nisoz HTML Template For Creative Agency" />
 
@@ -79,7 +92,7 @@
                 <div class="container-fluid">
                     <div class="main-menu__logo">
                         <a href="index.html">
-                            <img src="assets/images/logo-light.png" width="96" height="34" alt="Ogency">
+                            <img src="assets/images/logo.png" width="96" height="34" alt="Ogency">
                         </a>
                     </div><!-- /.main-menu__logo -->
                     <div class="main-menu__nav">
@@ -1143,7 +1156,7 @@
             <div class="container">
                 <div class="main-footer__top wow fadeInUp" data-wow-delay="100ms">
                     <a href="index.html" class="main-footer__logo">
-                        <img src="assets/images/footer-logo.png" alt="nisoz" width="96" height="34">
+                        <img src="assets/images/logo.png" alt="nisoz" width="96" height="34">
                     </a><!-- /.footer-logo -->
                     <div class="main-footer__social">
                         <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
@@ -1216,7 +1229,7 @@
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" width="96" height="34" alt="nisoz" /></a>
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logo.png" width="96" height="34" alt="nisoz" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
