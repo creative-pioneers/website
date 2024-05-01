@@ -32,9 +32,9 @@ $(".language-feature button").on("click", function (e) {
   window.location = jQuery(this).attr("data-href");
   deleteAllCookies();
 
-  let thmLogo = "images/nav-logo.png";
+  let thmLogo = "images/logo.jpg";
   let dLogo = "images/logo-dark.png";
-  let fLogo = "images/nav-logo.png";
+  let fLogo = "images/logo.jpg";
   let favicon = "images/favicon.png";
   let error404 = "images/icons/404-image.png";
 
