@@ -58,7 +58,65 @@
     <div class="page-wrapper">
         {% include creative-website/header-partial.html %}
 
-        {{ content }}
+        <section class="page-header">
+            <div class="page-header__bg"></div><!-- /.page-header__bg -->
+            <div class="page-header__shape1"></div><!-- /.page-header__shape1 -->
+            <div class="page-header__shape2"></div><!-- /.page-header__shape1 -->
+            <div class="page-header__shape3 wow slideInRight" data-wow-delay="300ms"></div><!-- /.page-header__shape3 -->
+            <div class="container">
+                <ul class="page-header__breadcrumb list-unstyled">
+                    <li><a href="">Home</a></li>
+                    <li><span>Services</span></li>
+                </ul><!-- /.page-breadcrumb list-unstyled -->
+                <h2 class="page-header__title">{{ page.title }}</h2><!-- /.page-title -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+        <!-- Services Details Start -->
+        <section class="services-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 wow fadeInUp animated" data-wow-delay="300ms">
+                        <div class="services-details__sidebar">
+                            <div class="services-details__services-list">
+                                <h3 class="services-details__services-title">All Services</h3>
+                                <ul class="services-details__services list-unstyled">
+                                    {% for service in pages.services.services-list %}
+                                        <li>
+                                            <a href="{{ post.url }}">{{ post.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                    <!-- <li><a href="website-designing.html">Website Designing</a></li>
+                                    <li><a href="website-development.html">Website Development</a></li>
+                                    <li><a href="mobile-application.html">Mobile Application</a></li>
+                                    <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                                    <li><a href="social-marketing.html">Social Marketing</a></li>
+                                    <li><a href="seo-content.html">SEO & Content Writing</a></li> -->
+                                </ul>
+                            </div><!-- /.service-widget -->
+                            <div class="services-details__banner">
+                                <div class="services-details__banner__image" style="background-image: url(assets/images/resources/banner-author.png)"></div>
+                                <h3 class="services-details__banner__title">Get a Free<br> Creative Web <br>Solutions</h3>
+                                <a href="/contact" class="nisoz-btn">
+                                    <span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span>
+                                    <span class="nisoz-btn__text">Contact</span>
+                                </a><!-- /.btn -->
+                            </div><!-- /.service-widget -->
+                            <div class="services-details__document">
+                                <div class="services-details__document__icon"><span class="icon-pdf-file"></span></div>
+                                <h3 class="services-details__document__title"><a href="/contact">Project agreement form</a></h3>
+                                <p class="services-details__document__text">3.9KB</p>
+                            </div><!-- /.service-widget -->
+                        </div><!-- /.service-sidebar -->
+                    </div><!-- /.column -->
+        
+                    <div class="col-xl-8 col-lg-7 wow fadeInUp animated" data-wow-delay="400ms">
+                        <div class="services-details__content">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         {% include creative-website/footer-partial.html %}
     </div><!-- /.page-wrapper -->
