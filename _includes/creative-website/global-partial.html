@@ -1,27 +1,53 @@
-<!-- Modal [responsive menu] -->
-<div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-slideout" role="document">
-        <div class="modal-content full">
-            <div class="modal-header" data-dismiss="modal">
-                Menu <i class="icon-close"></i>
-            </div>
-            <div class="menu modal-body">
-                <div class="row w-100">
-                    <div class="items p-0 col-12 text-center">
-                        <!-- Append [navbar] -->
-                    </div>
-                    <div class="contacts p-0 col-12 text-center">
-                        <!-- Append [navbar] -->
-                    </div>
-                </div>
-            </div>
+<div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+    <!-- /.mobile-nav__overlay -->
+    <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+        <div class="logo-box">
+            <a href="index.html" aria-label="logo image"><img src="assets/images/logo.jpg" width="50" height="50" alt="nisoz" /></a>
         </div>
+        <!-- /.logo-box -->
+        <div class="mobile-nav__container"></div>
+        <!-- /.mobile-nav__container -->
+        <ul class="mobile-nav__contact list-unstyled">
+            <li>
+                <i class="fas fa-envelope"></i>
+                {% include commons/phone-partial.html %}
+            </li>
+            <li>
+                <i class="fa fa-phone-alt"></i>
+                {% include commons/phone-partial.html %}
+            </li>
+        </ul><!-- /.mobile-nav__contact -->
+        <div class="mobile-nav__social">
+            <a href="https://www.linkedin.com/company/creativepioneers"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@creative-pioneers"><i class="fab fa-youtube"></i></a>
+        </div><!-- /.mobile-nav__social -->
     </div>
+    <!-- /.mobile-nav__content -->
 </div>
+<!-- /.mobile-nav__wrapper -->
 
-<!-- Scroll [to top] -->
-<div id="scroll-to-top" class="scroll-to-top">
-    <a href="#header" class="smooth-anchor">
-        <i class="icon-arrow-up"></i>
-    </a>
-</div>   
+<div class="search-popup">
+    <div class="search-popup__overlay search-toggler"></div>
+    <!-- /.search-popup__overlay -->
+    <div class="search-popup__content">
+        <form role="search" method="get" class="search-popup__form" action="#">
+            <input type="text" id="search" placeholder="Search Here..." />
+            <button type="submit" aria-label="search submit" class="nisoz-btn">
+                <span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span>
+                <span class="nisoz-btn__text"><i class="icon-magnifying-glass"></i></span>
+            </button>
+        </form>
+    </div>
+    <!-- /.search-popup__content -->
+</div>
+<!-- /.search-popup -->
+
+<!-- back-to-top-start -->
+<a href="#" class="scroll-top">
+    <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</a>
+<!-- back-to-top-end -->

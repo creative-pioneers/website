@@ -21,9 +21,9 @@
 title: CREATIVE PIONEERS
 email: send@creative-pioneers.org
 keywords: "CREATIVE PIONEERS, IT solutions, web development, app development, video production, graphic design, digital agency, creativity driven, innovation, stunning cinematography"
-subject: CREATIVE-PIONEERS
+subject: Creative pioneers is an EU based group of software engineers and digital media artists producing their own content under one brand.
 description: >- # this means to ignore newlines until "baseurl:"
-  CREATIVE-PIONEERS
+  Creative pioneers is an EU based group of software engineers and digital media artists producing their own content under one brand.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://creative-pioneers.org" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
