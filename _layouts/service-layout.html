@@ -80,23 +80,11 @@
                             <div class="services-details__services-list">
                                 <h3 class="services-details__services-title">All Services</h3>
                                 <ul class="services-details__services list-unstyled">
-                                    {% for service in site.pages.services %}
+                                    {% for service in site.serviceslist %}
                                         <li>
-                                            <a href="{{ service.url }}">{{ service.title }}</a>
+                                            <a href={{ service.permalink }}>{{ service.title }}</a>
                                         </li>
                                     {% endfor %}
-                                    
-                                    {% for service in site.services-list %}
-                                        <li>
-                                            <a href="{{ service.url }}">{{ service.title }}</a>
-                                        </li>
-                                    {% endfor %}
-                                    <!-- <li><a href="website-designing.html">Website Designing</a></li>
-                                    <li><a href="website-development.html">Website Development</a></li>
-                                    <li><a href="mobile-application.html">Mobile Application</a></li>
-                                    <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                                    <li><a href="social-marketing.html">Social Marketing</a></li>
-                                    <li><a href="seo-content.html">SEO & Content Writing</a></li> -->
                                 </ul>
                             </div><!-- /.service-widget -->
                             <div class="services-details__banner">

@@ -36,11 +36,11 @@
                         <a href="/">Home</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#">Services</a>
+                        <a>Services</a>
                         <ul>
                             {% for service in site.serviceslist %}
                                 <li>
-                                    <a href="">{{ service.title }}</a>
+                                    <a href={{ service.permalink }}>{{ service.title }}</a>
                                 </li>
                             {% endfor %}
                         </ul>
