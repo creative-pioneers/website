@@ -110,7 +110,7 @@
 
     selector.find("li").each(function () {
       let anchor = $(this).find("a");
-      if ($(anchor).attr("href").split("/")[-1] == FileName) {
+      if ($(anchor).attr("href") && $(anchor).attr("href").split("/")[-1] == FileName) {
         $(this).addClass("current");
       }
     });
