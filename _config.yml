@@ -37,6 +37,10 @@ sass:
     sass_dir: _sass
     style: compressed
 
+collections:
+  services:
+    output: true
+
 paginate: 12
 paginate_path: "/articles/page:num/"
 
