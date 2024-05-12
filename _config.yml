@@ -38,7 +38,7 @@ sass:
     style: compressed
 
 collections:
-  serviceslist:
+  services:
     output: true
   faq:
     output: true
