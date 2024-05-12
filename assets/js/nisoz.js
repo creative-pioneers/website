@@ -110,8 +110,10 @@
 
     selector.find("li").each(function () {
       let anchor = $(this).find("a");
-      if ($(anchor).attr("href") && $(anchor).attr("href").split("/")[-1] == FileName) {
-        $(this).addClass("current");
+      if($(anchor).attr("href")){
+        if ($(anchor).attr("href").split("/")[-1] == FileName) {
+          $(this).addClass("current");
+        }
       }
     });
     // if any li has .current elmnt add class
