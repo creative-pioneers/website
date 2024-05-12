@@ -82,7 +82,13 @@
                                 <ul class="services-details__services list-unstyled">
                                     {% for service in site.pages.services.services-list %}
                                         <li>
-                                            <a href="{{ post.url }}">{{ post.title }}</a>
+                                            <a href="{{ service.url }}">{{ service.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                    
+                                    {% for service in site.services-list %}
+                                        <li>
+                                            <a href="{{ service.url }}">{{ service.title }}</a>
                                         </li>
                                     {% endfor %}
                                     <!-- <li><a href="website-designing.html">Website Designing</a></li>
