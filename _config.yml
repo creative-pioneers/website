@@ -40,8 +40,6 @@ sass:
 collections:
   services:
     output: true
-  faq:
-    output: true
 
 paginate: 12
 paginate_path: "/articles/page:num/"
