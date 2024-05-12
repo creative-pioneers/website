@@ -38,7 +38,7 @@ sass:
     style: compressed
 
 collections:
-  services:
+  serviceslist:
     output: true
 
 paginate: 12
