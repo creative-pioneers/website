@@ -38,20 +38,11 @@
                     <li class="dropdown">
                         <a href="#">Services</a>
                         <ul>
-                            {% for service in site.services-list %}
+                            {% for service in site.services %}
                                 <li>
                                     <a href="{{ service.url }}">{{ service.title }}</a>
                                 </li>
                             {% endfor %}
-                            <!-- <li><a href="services.html">Services</a></li>
-                            <li><a href="services-carousel.html">Services carousel 01</a></li>
-                            <li><a href="services-carousel-2.html">Services carousel 02</a></li>
-                            <li><a href="website-designing.html">Website Designing</a></li>
-                            <li><a href="website-development.html">Website Development</a></li>
-                            <li><a href="mobile-application.html">Mobile Application</a></li>
-                            <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                            <li><a href="social-marketing.html">Social Marketing</a></li>
-                            <li><a href="seo-content.html">SEO & Content Writing</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
