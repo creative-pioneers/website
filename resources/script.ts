@@ -1,0 +1,6 @@
+require('./js/jquery.js')
+require('./js/jquery.smartmenus.min.js')
+require('./js/isotope.pkgd.js')
+require('./js/jquery.prettyPhoto.js')
+require('./js/swiper.min.js')
+require('./js/main.js')
