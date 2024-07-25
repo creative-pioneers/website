@@ -1,8 +1,12 @@
 ---
 layout: blog-layout
+title: Blog
 paginate: true
 ---
 <div class="blog-holder">
+    <h1 class="entry-title page-title">
+        {{ page.title}}
+    </h1>
     {% for post in paginator.posts %}    
     <article class="blog-item-holder">        
         <div class="entry-holder">
