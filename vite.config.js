@@ -9,7 +9,6 @@ export default defineConfig({
     rollupOptions: {
       input: [
         resolve(__dirname, 'resources/style.css'),
-        resolve(__dirname, 'resources/script.ts'),
       ],
       output: {
         entryFileNames: `[name].js`,
