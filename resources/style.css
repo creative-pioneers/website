@@ -1292,3 +1292,8 @@ footer {
     }
 
 }
+
+.single-post h1.entry-title.page-title {
+    text-align: center;
+    text-transform: uppercase;
+}
