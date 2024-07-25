@@ -1,27 +1,29 @@
 ---
 layout: blog-layout
 ---
-<div class="blog-holder">    
+<div class="blog-holder">
+    {% for post in paginator.posts %}    
     <article class="blog-item-holder">        
         <div class="entry-holder">
             <h2 class="entry-title">
-                <a href="single.html">Hundreds of thousands a still more gloriouas nights around art table</a>
+                <a href="single.html">{{ post.title }}</a>
             </h2>  
             <img src="/assets/images/blog_01.jpg" alt="" />
             <ul class="entry-info">                                                                        
                 <li class="author-nickname-holder">
                     <div class="entry-info-text">AUTHOR</div>                                                             
-                    <div class="author-nickname">Peter Clarke</div>                                                             
+                    <div class="author-nickname">{{ post.author }}</div>                                                             
                 </li>                                    
                 <li class="entry-date-holder">
                     <div class="entry-info-text">DATE</div>                                                             
-                    <div class="entry-date published">AUG 10, 2019</div>                                                             
+                    <div class="entry-date published">{{ post.date | date_to_string: "ordinal" }}</div>                                                             
                 </li>                                    
                 <li class="cat-links-holder">
                     <div class="entry-info-text">CATEGORY</div>                                                             
-                    <div class="cat-links">Interior, Art</div>                                                             
+                    <div class="cat-links">{{ post.category }}</div>                                                             
                 </li>                                                                                       
             </ul>                                                        
         </div>      
     </article>   
+    {% endfor %}
 </div>
