@@ -493,8 +493,9 @@
 {
     .hero-1 .front-content img.logo
     {
-        max-width: 186px;
+        max-width: 96px;
         margin-bottom: 15px;
+        border: 2px solid #e2e2e2;
     }
 
     .hero-1 .front-content h1
