@@ -81,7 +81,7 @@
 		// "fade" = FADE ANIMATION
 		// "slide" = SLIDE FROM BOTTOM ANIMATION
 		
-		var option_overlay_content_animation = "slide";
+		var option_overlay_content_animation = "fade";
 
 
 
@@ -515,11 +515,11 @@
 		// "on" = GOOGLE ANALYTICS ON
 		// "off" = GOOGLE ANALYTICS OFF
 		
-		var option_analytics_tracking = "on";
+		var option_analytics_tracking = "off";
 
 
 
 		// TRACKING ID
-		var option_analytics_tracking_id = "G-1VHBCHQN3Q";
+		var option_analytics_tracking_id = "";
 
 
