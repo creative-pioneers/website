@@ -1724,7 +1724,7 @@ body.is-mobile.merge-true .overlay .container-mid
         max-width: 280px;
         margin-bottom: 0;
         padding: 0 20px;
-        text-align: left;      
+        text-align: center;      
     }
 
     #contact p.footer {
