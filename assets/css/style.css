@@ -138,8 +138,8 @@ a:focus
 {
     bottom: 100%;
     opacity: 0;
-    -webkit-transition: bottom 800ms cubic-bezier(.540, .086, .000, .980) 1s;
-            transition: bottom 800ms cubic-bezier(.540, .086, .000, .980) 1s;
+    -webkit-transition: bottom 0ms cubic-bezier(.540, .086, .000, .980) 1.2s;
+            transition: bottom 0ms cubic-bezier(.540, .086, .000, .980) 1.2s;
     -webkit-transition: all 800ms cubic-bezier(.540, .086, .000, .980) .2s;
             transition: all 800ms cubic-bezier(.540, .086, .000, .980) .2s;
 }
