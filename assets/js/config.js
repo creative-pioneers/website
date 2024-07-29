@@ -219,7 +219,7 @@
 				
 				
 				// IMAGES PATH / URL
-				var option_hero_background_kenburns_path = [{src:"assets/images/1.jpg"}];
+				var option_hero_background_kenburns_path = [{src:"assets/images/background-cp.jpg"}];
 				
 				
 				
