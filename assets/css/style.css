@@ -144,8 +144,8 @@ a:focus
 #page-loader.hide-this
 {
     bottom: 100%;
-    -webkit-transition: all 1ms cubic-bezier(.540, .086, .000, .980) 1.2s;
-            transition: all 1ms cubic-bezier(.540, .086, .000, .980) 1.2s;
+    -webkit-transition: transform 1ms cubic-bezier(.540, .086, .000, .980) 1.2s;
+            transition: transform 1ms cubic-bezier(.540, .086, .000, .980) 1.2s;
 }
 
 #page-loader .spinner-container
