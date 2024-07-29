@@ -2071,6 +2071,19 @@ $(document).ready(function(){
          
 	});
 
+	// Blog cycle slideshow
+	$("#blog-cycle").cycle({
+         
+		fx : "scrollVert",
+		timeout: cycleDelay,
+		delay: 0,
+		autoHeight: "container",
+		speed: cycleDuration, 
+		slides: ".slide",
+		log: false
+         
+	});
+
 
 	
 });
