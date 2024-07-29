@@ -141,11 +141,11 @@ a:focus
             transition: opacity 800ms ease-in-out .2s;
 }
 
-#page-loader .spinner-container.hide-this
+#page-loader.hide-this
 {
     bottom: 100%;
-    -webkit-transition: all 0ms cubic-bezier(.540, .086, .000, .980) 1.2s;
-            transition: all 0ms cubic-bezier(.540, .086, .000, .980) 1.2s;
+    -webkit-transition: bottom 0ms cubic-bezier(.540, .086, .000, .980) 1.2s;
+            transition: bottom 0ms cubic-bezier(.540, .086, .000, .980) 1.2s;
 }
 
 #page-loader .spinner-container
