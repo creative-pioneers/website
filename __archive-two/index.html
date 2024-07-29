@@ -1,0 +1,34 @@
+---
+layout: blog-layout
+title: Blog
+paginate: true
+---
+<div class="blog-holder">
+    <h1 class="entry-title page-title">
+        {{ page.title}}
+    </h1>
+    {% for post in paginator.posts %}    
+    <article class="blog-item-holder">        
+        <div class="entry-holder">
+            <h2 class="entry-title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>  
+            <img src="/assets/images/blog_01.jpg" alt="" />
+            <ul class="entry-info">                                                                        
+                <li class="author-nickname-holder">
+                    <div class="entry-info-text">AUTHOR</div>                                                             
+                    <div class="author-nickname">{{ post.author }}</div>                                                             
+                </li>                                    
+                <li class="entry-date-holder">
+                    <div class="entry-info-text">DATE</div>                                                             
+                    <div class="entry-date published">{{ post.date | date_to_string: "ordinal" }}</div>                                                             
+                </li>                                    
+                <li class="cat-links-holder">
+                    <div class="entry-info-text">CATEGORY</div>                                                             
+                    <div class="cat-links">{{ post.category }}</div>                                                             
+                </li>                                                                                       
+            </ul>                                                        
+        </div>      
+    </article>   
+    {% endfor %}
+</div>

@@ -1293,7 +1293,6 @@ footer {
 
 }
 
-.single-post h1.entry-title.page-title {
-    text-align: center;
+h1.menu-heading {
     text-transform: uppercase;
 }
