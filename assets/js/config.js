@@ -515,11 +515,11 @@
 		// "on" = GOOGLE ANALYTICS ON
 		// "off" = GOOGLE ANALYTICS OFF
 		
-		var option_analytics_tracking = "off";
+		var option_analytics_tracking = "on";
 
 
 
 		// TRACKING ID
-		var option_analytics_tracking_id = "UA-XXXXXXXX-X";
+		var option_analytics_tracking_id = "G-1VHBCHQN3Q";
 
 
