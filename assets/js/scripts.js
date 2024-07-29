@@ -71,7 +71,7 @@ jQuery(window).on('load', function() {
 
 		}, 200);
 		
-	}, 600);
+	}, 900);
 	
 	
 	
