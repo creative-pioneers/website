@@ -145,8 +145,8 @@ a:focus
 {
     -webkit-transform: translate(-100%,-100%);
             transform: translate(-100%,-100%);
-    -webkit-transition: transform 1ms cubic-bezier(.540, .086, .000, .980) 1.2s;
-            transition: transform 1ms cubic-bezier(.540, .086, .000, .980) 1.2s;
+    -webkit-transition: translate 1ms cubic-bezier(.540, .086, .000, .980) 1.2s;
+            transition: translate 1ms cubic-bezier(.540, .086, .000, .980) 1.2s;
 }
 
 #page-loader .spinner-container
