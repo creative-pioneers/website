@@ -69,7 +69,7 @@ h6
     color: #fff;
 }
 
-h1
+h1, h2.title, h3.title
 {
     font-size: 45px;
 }
@@ -166,8 +166,8 @@ a:focus
 
     opacity: 1;
     border: solid 2px transparent;
-    border-top-color: #1fb8b2;
-    border-left-color: #1fb8b2;
+    border-top-color: #ee7226;
+    border-left-color: #ee7226;
     border-radius: 100%;
 }
 
