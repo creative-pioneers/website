@@ -375,6 +375,8 @@
             transform: translateY(0) !important;
 
     opacity: 1 !important;
+
+    max-width: 96px;
 }
 
 .hero-1 .front-content.page-enter-animated .cycle-wrapper
