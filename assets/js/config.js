@@ -142,7 +142,7 @@
         // "glitch" = GLITCH BACKGROUND
 		// "custom" = CUSTOM BACKGROUND
 		
-		var option_hero_background_mode = "glitch";
+		var option_hero_background_mode = "kenburns";
 
 
 
@@ -219,7 +219,7 @@
 				
 				
 				// IMAGES PATH / URL
-				var option_hero_background_kenburns_path = [{src:"assets/images/1.jpg"},{src: "assets/images/2.jpg"},{src: "assets/images/3.jpg"}];
+				var option_hero_background_kenburns_path = [{src:"assets/images/1.jpg"}];
 				
 				
 				
@@ -261,7 +261,7 @@
 				// flash = FLASH TRANSITION
 				// flash2 = FLASH 2 TRANSITION
 				
-				var option_hero_background_kenburns_transition = "slideDown";
+				var option_hero_background_kenburns_transition = "zoomIn2";
 				
 				
 				
